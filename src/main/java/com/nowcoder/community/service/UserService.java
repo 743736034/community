@@ -70,7 +70,7 @@ public class UserService implements CommunityConstant {
             return map;
         }
 
-        //验证密码
+        //验证邮箱
         u = userMapper.selectByEmail(user.getEmail());
         if(u != null){
             map.put("emailMsg","该邮箱已被注册");

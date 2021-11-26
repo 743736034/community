@@ -5,8 +5,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)  //注解作用在方法上
+@Retention(RetentionPolicy.RUNTIME)  //程序运行时有效
 public @interface LoginRequired {
     
 }

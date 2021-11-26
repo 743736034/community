@@ -43,6 +43,7 @@ public class LoginTicketInterceptor implements HandlerInterceptor {
         return true;
     }
 
+    //模板引擎之前，模板要用到user的
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         User user = hostHolder.getUser();

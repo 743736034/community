@@ -9,6 +9,6 @@ public class LoginTicket {
     private int id;
     private int userId;
     private String ticket;
-    private int status;
-    private Date expired;
+    private int status;  //0有效 1过期
+    private Date expired; //过期时间
 }
